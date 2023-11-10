@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAAED5E2AFBF22B00C002BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED5D2AFBF22B00C002BF /* AppDelegate.m */; };
+		CEAAED602AFBF23100C002BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAAED5F2AFBF23100C002BF /* Assets.xcassets */; };
+		CEAAED632AFBF23100C002BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAAED612AFBF23100C002BF /* MainMenu.xib */; };
+		CEAAED652AFBF23100C002BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED642AFBF23100C002BF /* main.m */; };
+		CEAAED702AFBF23100C002BF /* HW2P8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED6F2AFBF23100C002BF /* HW2P8Tests.m */; };
+		CEAAED7A2AFBF23100C002BF /* HW2P8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED792AFBF23100C002BF /* HW2P8UITests.m */; };
+		CEAAED7C2AFBF23100C002BF /* HW2P8UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED7B2AFBF23100C002BF /* HW2P8UITestsLaunchTests.m */; };
+		CEAAED8A2AFBF28800C002BF /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAAED892AFBF28800C002BF /* SDL2.framework */; };
+		CEAAED8B2AFBF28800C002BF /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAAED892AFBF28800C002BF /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEAAED8E2AFBF36300C002BF /* HW2Prob8 in Resources */ = {isa = PBXBuildFile; fileRef = CEAAED8D2AFBF36300C002BF /* HW2Prob8 */; };
+		CEAAED942AFBF3A500C002BF /* hw2_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED8F2AFBF3A500C002BF /* hw2_functions.cpp */; };
+		CEAAED952AFBF3A500C002BF /* map.bmp in Resources */ = {isa = PBXBuildFile; fileRef = CEAAED912AFBF3A500C002BF /* map.bmp */; };
+		CEAAED962AFBF3A500C002BF /* HW2_Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEAAED922AFBF3A500C002BF /* HW2_Visualizer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEAAED6C2AFBF23100C002BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAAED512AFBF22B00C002BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAAED582AFBF22B00C002BF;
+			remoteInfo = HW2P8;
+		};
+		CEAAED762AFBF23100C002BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAAED512AFBF22B00C002BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAAED582AFBF22B00C002BF;
+			remoteInfo = HW2P8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEAAED8C2AFBF28900C002BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEAAED8B2AFBF28800C002BF /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEAAED592AFBF22B00C002BF /* HW2P8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2P8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAAED5C2AFBF22B00C002BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEAAED5D2AFBF22B00C002BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEAAED5F2AFBF23100C002BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEAAED622AFBF23100C002BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CEAAED642AFBF23100C002BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEAAED662AFBF23100C002BF /* HW2P8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HW2P8.entitlements; sourceTree = "<group>"; };
+		CEAAED6B2AFBF23100C002BF /* HW2P8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW2P8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAAED6F2AFBF23100C002BF /* HW2P8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW2P8Tests.m; sourceTree = "<group>"; };
+		CEAAED752AFBF23100C002BF /* HW2P8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW2P8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAAED792AFBF23100C002BF /* HW2P8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW2P8UITests.m; sourceTree = "<group>"; };
+		CEAAED7B2AFBF23100C002BF /* HW2P8UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW2P8UITestsLaunchTests.m; sourceTree = "<group>"; };
+		CEAAED892AFBF28800C002BF /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		CEAAED8D2AFBF36300C002BF /* HW2Prob8 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HW2Prob8; sourceTree = "<group>"; };
+		CEAAED8F2AFBF3A500C002BF /* hw2_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hw2_functions.cpp; sourceTree = "<group>"; };
+		CEAAED902AFBF3A500C002BF /* HW2_Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HW2_Visualizer.h; sourceTree = "<group>"; };
+		CEAAED912AFBF3A500C002BF /* map.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = map.bmp; sourceTree = "<group>"; };
+		CEAAED922AFBF3A500C002BF /* HW2_Visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HW2_Visualizer.cpp; sourceTree = "<group>"; };
+		CEAAED932AFBF3A500C002BF /* hw2_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hw2_functions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAAED562AFBF22B00C002BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAAED8A2AFBF28800C002BF /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED682AFBF23100C002BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED722AFBF23100C002BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEAAED502AFBF22B00C002BF = {
+			isa = PBXGroup;
+			children = (
+				CEAAED8F2AFBF3A500C002BF /* hw2_functions.cpp */,
+				CEAAED932AFBF3A500C002BF /* hw2_functions.h */,
+				CEAAED922AFBF3A500C002BF /* HW2_Visualizer.cpp */,
+				CEAAED902AFBF3A500C002BF /* HW2_Visualizer.h */,
+				CEAAED912AFBF3A500C002BF /* map.bmp */,
+				CEAAED8D2AFBF36300C002BF /* HW2Prob8 */,
+				CEAAED5B2AFBF22B00C002BF /* HW2P8 */,
+				CEAAED6E2AFBF23100C002BF /* HW2P8Tests */,
+				CEAAED782AFBF23100C002BF /* HW2P8UITests */,
+				CEAAED5A2AFBF22B00C002BF /* Products */,
+				CEAAED882AFBF28800C002BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAAED5A2AFBF22B00C002BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAED592AFBF22B00C002BF /* HW2P8.app */,
+				CEAAED6B2AFBF23100C002BF /* HW2P8Tests.xctest */,
+				CEAAED752AFBF23100C002BF /* HW2P8UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAAED5B2AFBF22B00C002BF /* HW2P8 */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAED5C2AFBF22B00C002BF /* AppDelegate.h */,
+				CEAAED5D2AFBF22B00C002BF /* AppDelegate.m */,
+				CEAAED5F2AFBF23100C002BF /* Assets.xcassets */,
+				CEAAED612AFBF23100C002BF /* MainMenu.xib */,
+				CEAAED642AFBF23100C002BF /* main.m */,
+				CEAAED662AFBF23100C002BF /* HW2P8.entitlements */,
+			);
+			path = HW2P8;
+			sourceTree = "<group>";
+		};
+		CEAAED6E2AFBF23100C002BF /* HW2P8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAED6F2AFBF23100C002BF /* HW2P8Tests.m */,
+			);
+			path = HW2P8Tests;
+			sourceTree = "<group>";
+		};
+		CEAAED782AFBF23100C002BF /* HW2P8UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAED792AFBF23100C002BF /* HW2P8UITests.m */,
+				CEAAED7B2AFBF23100C002BF /* HW2P8UITestsLaunchTests.m */,
+			);
+			path = HW2P8UITests;
+			sourceTree = "<group>";
+		};
+		CEAAED882AFBF28800C002BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAED892AFBF28800C002BF /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAAED582AFBF22B00C002BF /* HW2P8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAAED7F2AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8" */;
+			buildPhases = (
+				CEAAED552AFBF22B00C002BF /* Sources */,
+				CEAAED562AFBF22B00C002BF /* Frameworks */,
+				CEAAED572AFBF22B00C002BF /* Resources */,
+				CEAAED8C2AFBF28900C002BF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HW2P8;
+			productName = HW2P8;
+			productReference = CEAAED592AFBF22B00C002BF /* HW2P8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEAAED6A2AFBF23100C002BF /* HW2P8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAAED822AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8Tests" */;
+			buildPhases = (
+				CEAAED672AFBF23100C002BF /* Sources */,
+				CEAAED682AFBF23100C002BF /* Frameworks */,
+				CEAAED692AFBF23100C002BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEAAED6D2AFBF23100C002BF /* PBXTargetDependency */,
+			);
+			name = HW2P8Tests;
+			productName = HW2P8Tests;
+			productReference = CEAAED6B2AFBF23100C002BF /* HW2P8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEAAED742AFBF23100C002BF /* HW2P8UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAAED852AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8UITests" */;
+			buildPhases = (
+				CEAAED712AFBF23100C002BF /* Sources */,
+				CEAAED722AFBF23100C002BF /* Frameworks */,
+				CEAAED732AFBF23100C002BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEAAED772AFBF23100C002BF /* PBXTargetDependency */,
+			);
+			name = HW2P8UITests;
+			productName = HW2P8UITests;
+			productReference = CEAAED752AFBF23100C002BF /* HW2P8UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAAED512AFBF22B00C002BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CEAAED582AFBF22B00C002BF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CEAAED6A2AFBF23100C002BF = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CEAAED582AFBF22B00C002BF;
+					};
+					CEAAED742AFBF23100C002BF = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CEAAED582AFBF22B00C002BF;
+					};
+				};
+			};
+			buildConfigurationList = CEAAED542AFBF22B00C002BF /* Build configuration list for PBXProject "HW2P8" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEAAED502AFBF22B00C002BF;
+			productRefGroup = CEAAED5A2AFBF22B00C002BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAAED582AFBF22B00C002BF /* HW2P8 */,
+				CEAAED6A2AFBF23100C002BF /* HW2P8Tests */,
+				CEAAED742AFBF23100C002BF /* HW2P8UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAAED572AFBF22B00C002BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAAED602AFBF23100C002BF /* Assets.xcassets in Resources */,
+				CEAAED632AFBF23100C002BF /* MainMenu.xib in Resources */,
+				CEAAED952AFBF3A500C002BF /* map.bmp in Resources */,
+				CEAAED8E2AFBF36300C002BF /* HW2Prob8 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED692AFBF23100C002BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED732AFBF23100C002BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAAED552AFBF22B00C002BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAAED652AFBF23100C002BF /* main.m in Sources */,
+				CEAAED962AFBF3A500C002BF /* HW2_Visualizer.cpp in Sources */,
+				CEAAED942AFBF3A500C002BF /* hw2_functions.cpp in Sources */,
+				CEAAED5E2AFBF22B00C002BF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED672AFBF23100C002BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAAED702AFBF23100C002BF /* HW2P8Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAAED712AFBF23100C002BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAAED7C2AFBF23100C002BF /* HW2P8UITestsLaunchTests.m in Sources */,
+				CEAAED7A2AFBF23100C002BF /* HW2P8UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEAAED6D2AFBF23100C002BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAAED582AFBF22B00C002BF /* HW2P8 */;
+			targetProxy = CEAAED6C2AFBF23100C002BF /* PBXContainerItemProxy */;
+		};
+		CEAAED772AFBF23100C002BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAAED582AFBF22B00C002BF /* HW2P8 */;
+			targetProxy = CEAAED762AFBF23100C002BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEAAED612AFBF23100C002BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAAED622AFBF23100C002BF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAAED7D2AFBF23100C002BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEAAED7E2AFBF23100C002BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEAAED802AFBF23100C002BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HW2P8/HW2P8.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CEAAED812AFBF23100C002BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HW2P8/HW2P8.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		CEAAED832AFBF23100C002BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW2P8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW2P8";
+			};
+			name = Debug;
+		};
+		CEAAED842AFBF23100C002BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW2P8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HW2P8";
+			};
+			name = Release;
+		};
+		CEAAED862AFBF23100C002BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HW2P8;
+			};
+			name = Debug;
+		};
+		CEAAED872AFBF23100C002BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-24.HW2P8UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HW2P8;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAAED542AFBF22B00C002BF /* Build configuration list for PBXProject "HW2P8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAAED7D2AFBF23100C002BF /* Debug */,
+				CEAAED7E2AFBF23100C002BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAAED7F2AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAAED802AFBF23100C002BF /* Debug */,
+				CEAAED812AFBF23100C002BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAAED822AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAAED832AFBF23100C002BF /* Debug */,
+				CEAAED842AFBF23100C002BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAAED852AFBF23100C002BF /* Build configuration list for PBXNativeTarget "HW2P8UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAAED862AFBF23100C002BF /* Debug */,
+				CEAAED872AFBF23100C002BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAAED512AFBF22B00C002BF /* Project object */;
+}
